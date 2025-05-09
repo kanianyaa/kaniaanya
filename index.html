@@ -6,6 +6,239 @@
     <title>Document</title>
 </head>
 <body>
-    halo nama saya kania
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Ayam Goreng Bumbu Kuning</title>
+    <!-- Mengimpor font dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+      /* Gaya dasar */
+      body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.8;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+        color: #333;
+        margin: 0;
+        padding: 0;
+        animation: gradientAnimation 10s ease infinite;
+      }
+
+      @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      h1, h2 {
+        font-family: 'Playfair Display', serif;
+      }
+
+      h1 {
+        background-color: #ff6f61;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      h1::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        animation: shine 3s infinite;
+      }
+
+      @keyframes shine {
+        100% { left: 100%; }
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 15px;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      p {
+        padding: 0 20px;
+        font-size: 1.1em;
+        text-align: justify;
+      }
+
+      b {
+        font-weight: bold;
+        color: #ff6f61;
+      }
+
+      ol {
+        margin: 20px;
+        padding-left: 40px;
+        font-size: 1.1em;
+      }
+
+      li {
+        margin-bottom: 15px;
+        padding-left: 10px;
+        position: relative;
+      }
+
+      li::before {
+        content: '🍗';
+        position: absolute;
+        left: -25px;
+        top: 0;
+        font-size: 1.2em;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 111, 97, 0.1), transparent 70%);
+        animation: rotate 10s linear infinite;
+      }
+
+      @keyframes rotate {
+        100% { transform: rotate(360deg); }
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #ff6f61;
+        color: white;
+        font-size: 0.9em;
+        position: relative;
+        overflow: hidden;
+      }
+
+      footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        animation: shine 3s infinite;
+      }
+
+      .highlight {
+        color: #ff6f61;
+      }
+
+      h2 {
+        color: #ff6f61;
+        text-align: center;
+        font-size: 2.2em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background-color: #ff6f61;
+      }
+
+      /* Efek hover untuk daftar */
+      li:hover {
+        background-color: #fff3f2;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Garis pemisah */
+      hr {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #ff6f61, transparent);
+        margin: 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resep Ayam Goreng Bumbu Kuning</h1>
+      <img src="Ayam Goreng BB Kuning.jpeg" alt="Ayam Goreng Bumbu Kuning" width="300" height="300" />
+      <p>
+        Ayam goreng bumbu kuning adalah salah satu hidangan populer di Indonesia. Ayam dimarinasi dengan rempah-rempah khas yang memberikan cita rasa gurih dan aroma harum. Cocok disajikan dengan nasi hangat dan sambal terasi!
+      </p>
+      <hr>
+      <h2>Bahan-Bahan:</h2>
+      <ol>
+        <li>1 ekor ayam, potong sesuai selera</li>
+        <li>500 ml air kelapa (opsional, untuk rasa lebih gurih)</li>
+        <li>2 lembar daun salam, memarkan</li>
+        <li>Minyak untuk menggoreng</li>
+      </ol>
+      <hr>
+      <h2>Bumbu Halus:</h2>
+      <ol>
+        <li>5 siung bawang putih</li>
+        <li>8 siung bawang merah</li>
+        <li>3 butir kemiri</li>
+        <li>1 ruas kunyit, bakar sebentar</li>
+        <li>1 ruas lengkuas</li>
+        <li>1 sdt ketumbar</li>
+        <li>Garam secukupnya</li>
+        <li>Gula secukupnya</li>
+      </ol>
+      <hr>
+      <h2>Langkah-langkah:</h2>
+      <ol>
+        <li>Haluskan Bumbu: Blender atau ulek semua bahan bumbu halus hingga benar-benar lembut.</li>
+        <li>Rebus Ayam: Masukkan ayam ke dalam wajan, tambahkan bumbu halus, serai, daun salam, dan air kelapa. Masak dengan api sedang hingga ayam matang dan bumbu meresap. Masak hingga air menyusut dan ayam sedikit mengering.</li>
+        <li>Goreng Ayam: Panaskan minyak dalam wajan, lalu goreng ayam hingga kecokelatan. Angkat dan tiriskan.</li>
+        <li>Sajikan: Ayam goreng bumbu kuning siap disajikan! Tambahkan sambal dan lalapan sesuai selera.</li>
+      </ol>
+    </div>
+    <footer>
+      <p>&copy; 2025 Resep Ayam Goreng Bumbu Kuning. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
 </body>
 </html>
